@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PomContainer should matchsnapshot 1`] = `
+<div
+  className="pom-container"
+>
+  <div
+    className="pom-cards"
+  >
+    <i
+      class="fab fa-xbox"
+      onClick={[Function]}
+    />
+    <h4>
+      0
+       
+    </h4>
+    <p>
+       undefinedh undefinedm undefineds
+    </p>
+  </div>
+</div>
+`;

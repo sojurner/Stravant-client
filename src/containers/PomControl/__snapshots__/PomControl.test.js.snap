@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PomControl should match snapShot 1`] = `
+<div
+  className="pom-control"
+>
+  <h3
+    className="track-poms"
+  >
+    Track Pomodoros
+  </h3>
+  <section
+    className="pom-details"
+  >
+    <i
+      class="fas fa-play-circle"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+       
+    </i>
+  </section>
+  <PomContainer
+    pomHistory={
+      Object {
+        "Mon, Sep 10, 2018 11:43 PM": Object {
+          "description": false,
+          "hour": 0,
+          "mSecond": 0,
+          "minute": 0,
+          "save": false,
+          "second": 0,
+          "showHistory": false,
+        },
+        "Mon, Sep 10, 2018 11:58 PM": Object {
+          "description": false,
+          "hour": 0,
+          "mSecond": 0,
+          "minute": 0,
+          "save": false,
+          "second": 0,
+          "showHistory": false,
+        },
+        "Mon, Sep 10, 2018 9:12 PM": Object {
+          "description": false,
+          "hour": 0,
+          "mSecond": 0,
+          "minute": 0,
+          "save": true,
+          "second": 0,
+          "showHistory": true,
+        },
+      }
+    }
+    removePom={[Function]}
+  />
+</div>
+`;
+
+exports[`PomControl should match snapshot 1`] = `
+<div
+  className="pom-control"
+>
+  <h3
+    className="track-poms"
+  >
+    Track Pomodoros
+  </h3>
+  <section
+    className="pom-details"
+  >
+    <i
+      class="fas fa-play-circle"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+       
+    </i>
+  </section>
+  <PomContainer
+    pomHistory={
+      Object {
+        "Mon, Sep 10, 2018 11:43 PM": Object {
+          "description": false,
+          "hour": 0,
+          "mSecond": 0,
+          "minute": 0,
+          "save": false,
+          "second": 0,
+          "showHistory": false,
+        },
+        "Mon, Sep 10, 2018 11:58 PM": Object {
+          "description": false,
+          "hour": 0,
+          "mSecond": 0,
+          "minute": 0,
+          "save": false,
+          "second": 0,
+          "showHistory": false,
+        },
+        "Mon, Sep 10, 2018 9:12 PM": Object {
+          "description": false,
+          "hour": 0,
+          "mSecond": 0,
+          "minute": 0,
+          "save": true,
+          "second": 0,
+          "showHistory": true,
+        },
+      }
+    }
+    removePom={[Function]}
+  />
+</div>
+`;

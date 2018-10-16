@@ -1,0 +1,85 @@
+.personal-stats {
+  display: flex;
+  justify-content: center; }
+
+path {
+  cursor: pointer; }
+
+.personal-stats {
+  position: absolute; }
+
+.legend {
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  font-size: 0.8em;
+  padding-top: 2rem; }
+
+.running-avg {
+  text-align: center;
+  font-family: daybold;
+  font-size: 2.5rem;
+  padding: auto;
+  color: #a49188;
+  margin: 0; }
+
+.pie-chart-wrap {
+  display: flex;
+  justify-content: center; }
+
+li {
+  display: flex;
+  left: 0.6rem; }
+
+.data-details {
+  position: fixed;
+  font-family: daybold;
+  font-size: 1.5rem;
+  color: #ffc1b8;
+  letter-spacing: 2px;
+  background: #c5696a;
+  border-radius: 0.4em;
+  margin: 25rem 0;
+  padding: 1rem;
+  opacity: 0.9; }
+
+.legend-container-fc25d28b8dda2e2172d549eafe0de054a26a4837 {
+  width: 11rem;
+  margin: 8.7rem 6.3rem;
+  position: fixed;
+  font-family: daybold;
+  font-size: 1.5rem; }
+
+.legend {
+  padding-top: 0.5rem;
+  background-color: #b3aaab; }
+
+.spinning-globe {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 3rem auto;
+  background: center/cover url(../../images/earth.png);
+  box-shadow: inset 0 0 25px #b07979;
+  animation: world 35s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a49188; }
+
+.spinning-globe:hover {
+  box-shadow: inset 0 0 25px #8b4242; }
+
+@keyframes world {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 719px 0; } }
+
+@media screen and (max-width: 510px) {
+  .pie-chart-wrap {
+    margin-top: 2rem; }
+  .running-avg {
+    margin: 2rem; }
+  .data-details {
+    margin: 30rem 0; } }
