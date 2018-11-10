@@ -1,4 +1,3 @@
-import { stravaApi } from '../../data/strava_config';
 import * as scrape from '../helpers/helpers';
 
 export const exchangeUserToken = async code => {
