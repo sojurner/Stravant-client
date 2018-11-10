@@ -6,8 +6,8 @@ export const exchangeUserToken = async code => {
   const options = {
     method: 'POST',
     body: JSON.stringify({
-      client_id: stravaApi.client_id,
-      client_secret: stravaApi.client_secret,
+      client_id: process.env.REACT_APP_CLIENT_ID,
+      client_secret: process.env.REACT_APP_CLIENT_SECRET,
       code: code
     }),
     headers: {

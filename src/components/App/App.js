@@ -5,7 +5,6 @@ import ContentRoute from '../../containers/ContentRoute/ContentRoute';
 import { NavBar } from '../../containers/NavBar/NavBar';
 import Welcome from '../../containers/Welcome/Welcome';
 import * as userActions from '../../actions/userAction';
-import { stravaApi } from '../../data/strava_config';
 import './App.css';
 export class App extends Component {
   constructor() {
@@ -30,7 +29,7 @@ export class App extends Component {
     }
     if (localStorage.getItem('code')) {
       const codeValue = JSON.parse(localStorage.getItem('code'));
-      const refreshUrl = `http://localhost:3000/?state=&code=${codeValue}&scope=`;
+      const refreshUrl = `https://stravant.herokuapp.com/?state=&code=${codeValue}&scope=`;
 
       window.location.reload(refreshUrl);
       localStorage.removeItem('code');
@@ -45,9 +44,9 @@ export class App extends Component {
 
   handleClick = () => {
     const url = `https://www.strava.com/oauth/authorize?client_id=${
-      stravaApi.client_id
+      process.env.REACT_APP_CLIENT_ID
     }&redirect_uri=${
-      stravaApi.redirect_uri
+      process.env.REACT_APP_REDIRECT_URI
     }&response_type=code&approval_prompt=force`;
     window.location = url;
   };
@@ -63,7 +62,7 @@ export class App extends Component {
 
   signOutUser = () => {
     localStorage.removeItem('code');
-    window.location = 'http://localhost:3000/';
+    window.location = 'https://stravant.herokuapp.com/';
   };
 
   render() {

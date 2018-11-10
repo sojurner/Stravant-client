@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PomControl from '../PomControl/PomControl';
 import * as userActions from '../../actions/userAction';
 
 import * as apiCalls from '../../helpers/apiCalls/apiCalls';
@@ -56,28 +55,26 @@ export class Welcome extends Component {
     return (
       <div className="welcome-page">
         <span>
-          {info &&
-            info.gender === 'M' && (
-              <img
-                className="avatar"
-                src={require('../../images/male-avatar.png')}
-                height="70"
-                width="70"
-                // onClick={e => this.handleClick(e, 'show')}
-                // onMouseEnter={this.handleClick}
-                // onMouseOut={e => this.handleClick(e, 'remove')}
-              />
-            )}
-          {info &&
-            info.gender === 'F' && (
-              <img
-                className="avatar"
-                src={require('../../images/female-avatar.png')}
-                height="100"
-                width="100"
-                onClick={this.handleClick}
-              />
-            )}
+          {info && info.gender === 'M' && (
+            <img
+              className="avatar"
+              src={require('../../images/male-avatar.png')}
+              height="70"
+              width="70"
+              // onClick={e => this.handleClick(e, 'show')}
+              // onMouseEnter={this.handleClick}
+              // onMouseOut={e => this.handleClick(e, 'remove')}
+            />
+          )}
+          {info && info.gender === 'F' && (
+            <img
+              className="avatar"
+              src={require('../../images/female-avatar.png')}
+              height="100"
+              width="100"
+              onClick={this.handleClick}
+            />
+          )}
           {greeting && <h4 className="speech-bubble">Hi {info.firstName}</h4>}
         </span>
       </div>
